@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 89898417}
   - component: {fileID: 89898416}
   m_Layer: 0
-  m_Name: spritesheet_tutorial_stage_44
+  m_Name: Pintu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -218,7 +218,7 @@ GameObject:
   - component: {fileID: 160395254}
   - component: {fileID: 160395253}
   m_Layer: 0
-  m_Name: spritesheet_tutorial_stage_81
+  m_Name: Gagang_Pintu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -302,7 +302,7 @@ GameObject:
   - component: {fileID: 229572240}
   - component: {fileID: 229572239}
   m_Layer: 0
-  m_Name: spritesheet_tutorial_stage_75
+  m_Name: BG
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -499,7 +499,7 @@ GameObject:
   - component: {fileID: 563348870}
   - component: {fileID: 563348869}
   m_Layer: 0
-  m_Name: spritesheet_tutorial_stage_68
+  m_Name: Diary
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -667,7 +667,7 @@ GameObject:
   - component: {fileID: 809993187}
   - component: {fileID: 809993186}
   m_Layer: 0
-  m_Name: spritesheet_tutorial_stage_15
+  m_Name: Kayu_Dinding
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -835,7 +835,7 @@ GameObject:
   - component: {fileID: 958497595}
   - component: {fileID: 958497594}
   m_Layer: 0
-  m_Name: spritesheet_tutorial_stage_88
+  m_Name: Lemari
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -919,7 +919,7 @@ GameObject:
   - component: {fileID: 976511535}
   - component: {fileID: 976511534}
   m_Layer: 0
-  m_Name: spritesheet_tutorial_stage_28
+  m_Name: Cat_Bed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1003,7 +1003,7 @@ GameObject:
   - component: {fileID: 1052786903}
   - component: {fileID: 1052786902}
   m_Layer: 0
-  m_Name: spritesheet_tutorial_stage_113
+  m_Name: Foto_Dinding
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1171,7 +1171,7 @@ GameObject:
   - component: {fileID: 1639390309}
   - component: {fileID: 1639390308}
   m_Layer: 0
-  m_Name: spritesheet_tutorial_stage_25
+  m_Name: Cat_Tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1255,7 +1255,7 @@ GameObject:
   - component: {fileID: 2014053431}
   - component: {fileID: 2014053430}
   m_Layer: 0
-  m_Name: spritesheet_tutorial_stage_116
+  m_Name: Foto_Miring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1418,6 +1418,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 820680686}
+  - {fileID: 229572240}
   - {fileID: 802159325}
   - {fileID: 1548568937}
   - {fileID: 2085507736}
@@ -1430,4 +1431,3 @@ SceneRoots:
   - {fileID: 2014053431}
   - {fileID: 1052786903}
   - {fileID: 809993187}
-  - {fileID: 229572240}
