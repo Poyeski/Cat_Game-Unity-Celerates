@@ -1,0 +1,4 @@
+repository "Cat Game Celerates@Poyesky@cloud"
+  path "/"
+    br "/main"
+    co "/main"
