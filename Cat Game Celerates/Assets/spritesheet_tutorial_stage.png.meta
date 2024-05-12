@@ -115,7 +115,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 4338
-        width: 1923
+        width: 1920
         height: 1082
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -241,7 +241,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1924
         y: 3251
-        width: 1924
+        width: 1920
         height: 1086
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
