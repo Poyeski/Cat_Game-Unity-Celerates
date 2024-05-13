@@ -106,6 +106,71 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -118,7 +183,7 @@ TextureImporter:
         width: 1923
         height: 1084
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -131,7 +196,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_tutorial_stage_1
+      name: Shelf1_Tutorial
       rect:
         serializedVersion: 2
         x: 2554
@@ -139,7 +204,7 @@ TextureImporter:
         width: 436
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,7 +217,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_tutorial_stage_2
+      name: Drawer1_tutorial
       rect:
         serializedVersion: 2
         x: 5000
@@ -160,7 +225,7 @@ TextureImporter:
         width: 527
         height: 298
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,7 +246,7 @@ TextureImporter:
         width: 6
         height: 50
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,7 +259,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_tutorial_stage_4
+      name: CatTower_Tutorial
       rect:
         serializedVersion: 2
         x: 84
@@ -202,7 +267,7 @@ TextureImporter:
         width: 521
         height: 586
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,7 +280,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_tutorial_stage_5
+      name: Diary_Tutorial
       rect:
         serializedVersion: 2
         x: 2936
@@ -223,7 +288,7 @@ TextureImporter:
         width: 327
         height: 141
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -236,16 +301,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_tutorial_stage_6
+      name: Curtain_tutorial
       rect:
         serializedVersion: 2
         x: 3649
-        y: 2246
+        y: 3247
         width: 481
-        height: 2083
+        height: 1082
       alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 549, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -257,7 +322,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_tutorial_stage_7
+      name: Wall_tutorial
       rect:
         serializedVersion: 2
         x: 0
@@ -265,7 +330,7 @@ TextureImporter:
         width: 1923
         height: 1086
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -278,7 +343,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_tutorial_stage_8
+      name: Doorhandle1_Tutorial
       rect:
         serializedVersion: 2
         x: 1808
@@ -286,7 +351,7 @@ TextureImporter:
         width: 115
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -299,7 +364,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_tutorial_stage_9
+      name: Doorhandle2_tutorial
       rect:
         serializedVersion: 2
         x: 3733
@@ -307,7 +372,7 @@ TextureImporter:
         width: 113
         height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -320,7 +385,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_tutorial_stage_10
+      name: Floor_tutorial
       rect:
         serializedVersion: 2
         x: 3843
@@ -328,7 +393,7 @@ TextureImporter:
         width: 1923
         height: 225
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -341,7 +406,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_tutorial_stage_11
+      name: Frame1_Tutorial
       rect:
         serializedVersion: 2
         x: 1118
@@ -349,7 +414,7 @@ TextureImporter:
         width: 129
         height: 158
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -362,7 +427,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_tutorial_stage_12
+      name: Frame3_tutorial
       rect:
         serializedVersion: 2
         x: 1287
@@ -370,7 +435,7 @@ TextureImporter:
         width: 290
         height: 197
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -383,7 +448,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_tutorial_stage_13
+      name: Frame2_tutorial
       rect:
         serializedVersion: 2
         x: 1247
@@ -391,7 +456,7 @@ TextureImporter:
         width: 124
         height: 143
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -404,7 +469,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_tutorial_stage_14
+      name: Frame4_Tutorial
       rect:
         serializedVersion: 2
         x: 1548
@@ -412,7 +477,7 @@ TextureImporter:
         width: 113
         height: 146
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -425,7 +490,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_tutorial_stage_15
+      name: CatBed_tutorial
       rect:
         serializedVersion: 2
         x: 2354
@@ -433,7 +498,7 @@ TextureImporter:
         width: 839
         height: 239
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -441,6 +506,48 @@ TextureImporter:
       bones: []
       spriteID: d4b065eb36327004492897a2fdc84b66
       internalID: 962748609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Glass_Tutorial
+      rect:
+        serializedVersion: 2
+        x: 3845
+        y: 2250
+        width: 282
+        height: 998
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f23bea338b5c36e439e4447452b0119a
+      internalID: 1832172857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door_Tutorial
+      rect:
+        serializedVersion: 2
+        x: 3650
+        y: 2266
+        width: 193
+        height: 836
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 851e674452291cb418e5ba537a9c16b1
+      internalID: -239147009
       vertices: []
       indices: 
       edges: []
@@ -456,22 +563,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      CatBed_tutorial: 962748609
+      CatTower_Tutorial: 1334813980
+      Curtain_tutorial: -609353655
+      Diary_Tutorial: -1271377810
+      Door_Tutorial: -239147009
+      Doorhandle1_Tutorial: -819520266
+      Doorhandle2_tutorial: -2135099138
+      Drawer1_tutorial: -859046923
+      Floor_tutorial: 417912653
+      Frame1_Tutorial: -157591795
+      Frame2_tutorial: 145401939
+      Frame3_tutorial: 175340751
+      Frame4_Tutorial: 1657246046
+      Glass_Tutorial: 1832172857
+      Shelf1_Tutorial: 1630738784
+      Wall_tutorial: 481211704
       spritesheet_tutorial_stage_0: 1893295497
-      spritesheet_tutorial_stage_1: 1630738784
-      spritesheet_tutorial_stage_10: 417912653
-      spritesheet_tutorial_stage_11: -157591795
-      spritesheet_tutorial_stage_12: 175340751
-      spritesheet_tutorial_stage_13: 145401939
-      spritesheet_tutorial_stage_14: 1657246046
-      spritesheet_tutorial_stage_15: 962748609
-      spritesheet_tutorial_stage_2: -859046923
       spritesheet_tutorial_stage_3: 286681966
-      spritesheet_tutorial_stage_4: 1334813980
-      spritesheet_tutorial_stage_5: -1271377810
-      spritesheet_tutorial_stage_6: -609353655
-      spritesheet_tutorial_stage_7: 481211704
-      spritesheet_tutorial_stage_8: -819520266
-      spritesheet_tutorial_stage_9: -2135099138
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
