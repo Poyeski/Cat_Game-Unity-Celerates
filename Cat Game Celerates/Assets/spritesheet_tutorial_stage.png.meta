@@ -178,10 +178,10 @@ TextureImporter:
       name: spritesheet_tutorial_stage_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 4326
-        width: 1923
-        height: 1084
+        x: 2557
+        y: 5040
+        width: 435
+        height: 72
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,55 +196,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shelf1_Tutorial
-      rect:
-        serializedVersion: 2
-        x: 2554
-        y: 5047
-        width: 436
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c013da15bc7d2ef488747bc27e7e2599
-      internalID: 1630738784
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Drawer1_tutorial
-      rect:
-        serializedVersion: 2
-        x: 5000
-        y: 4529
-        width: 527
-        height: 298
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4464ffff1176ad444a88f969430e5829
-      internalID: -859046923
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: spritesheet_tutorial_stage_3
       rect:
         serializedVersion: 2
-        x: 5538
-        y: 4580
-        width: 6
-        height: 50
+        x: 5573
+        y: 3360
+        width: 199
+        height: 827
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,12 +217,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CatTower_Tutorial
+      name: spritesheet_tutorial_stage_1
       rect:
         serializedVersion: 2
-        x: 84
-        y: 3355
-        width: 521
+        x: 3934
+        y: 4447
+        width: 519
         height: 586
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -273,20 +231,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb5792a4bf08db34a91d20cabdb7408e
-      internalID: 1334813980
+      spriteID: 09903e2040c77724ca2d1ef59e47d618
+      internalID: -1816450271
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Diary_Tutorial
+      name: spritesheet_tutorial_stage_2
       rect:
         serializedVersion: 2
-        x: 2936
-        y: 3245
-        width: 327
-        height: 141
+        x: 6204
+        y: 4401
+        width: 838
+        height: 241
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -294,166 +252,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9960eada2cf76e40985b3e4386edf24
-      internalID: -1271377810
+      spriteID: ace2905287639a444adbcb1a93ecd674
+      internalID: -1816960409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Curtain_tutorial
+      name: spritesheet_tutorial_stage_4
       rect:
         serializedVersion: 2
-        x: 3649
-        y: 3247
-        width: 481
-        height: 1082
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 549, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 826ff430be19ef04884a0a82a868a2b9
-      internalID: -609353655
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wall_tutorial
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 2162
-        width: 1923
-        height: 1086
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f931c70f67f63a946ae803fd36d10402
-      internalID: 481211704
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Doorhandle1_Tutorial
-      rect:
-        serializedVersion: 2
-        x: 1808
-        y: 1573
-        width: 115
-        height: 48
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b0cedfdec2c78c34d8360e134b513229
-      internalID: -819520266
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Doorhandle2_tutorial
-      rect:
-        serializedVersion: 2
-        x: 3733
-        y: 1568
-        width: 113
-        height: 59
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6ed37a18125f3f242b5ca0663c7d37c1
-      internalID: -2135099138
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Floor_tutorial
-      rect:
-        serializedVersion: 2
-        x: 3843
-        y: 1081
-        width: 1923
-        height: 225
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 18229df675db7bb45afca7bd605cbdad
-      internalID: 417912653
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Frame1_Tutorial
-      rect:
-        serializedVersion: 2
-        x: 1118
-        y: 701
-        width: 129
-        height: 158
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 25edcd27c6f29d94fa7bec0502f0f759
-      internalID: -157591795
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Frame3_tutorial
-      rect:
-        serializedVersion: 2
-        x: 1287
-        y: 701
-        width: 290
-        height: 197
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 652366dfe31a05a408614652f2c956d0
-      internalID: 175340751
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Frame2_tutorial
-      rect:
-        serializedVersion: 2
-        x: 1247
-        y: 535
-        width: 124
+        x: 6787
+        y: 3251
+        width: 330
         height: 143
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -462,20 +273,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 054656e43ceaba34d98467111f0c64a7
-      internalID: 145401939
+      spriteID: 759c5a95add3fae4ba151c474228249e
+      internalID: -431607942
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Frame4_Tutorial
+      name: spritesheet_tutorial_stage_5
       rect:
         serializedVersion: 2
-        x: 1548
-        y: 532
+        x: 1808
+        y: 2661
+        width: 116
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c16463dce938c4e44a82275d584323a0
+      internalID: 798427795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_tutorial_stage_6
+      rect:
+        serializedVersion: 2
+        x: 3735
+        y: 2657
         width: 113
-        height: 146
+        height: 57
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -483,20 +315,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a8036d843c63084c8be97746b3773a7
-      internalID: 1657246046
+      spriteID: 0c67e87c68b16e844abc5e9c041b8572
+      internalID: 401434978
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CatBed_tutorial
+      name: spritesheet_tutorial_stage_7
       rect:
         serializedVersion: 2
-        x: 2354
-        y: 65
-        width: 839
-        height: 239
+        x: 5005
+        y: 2368
+        width: 526
+        height: 301
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -504,20 +336,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4b065eb36327004492897a2fdc84b66
-      internalID: 962748609
+      spriteID: d3c964fab26fcf947910014ea3ae7759
+      internalID: -1699919293
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Glass_Tutorial
+      name: spritesheet_tutorial_stage_8
       rect:
         serializedVersion: 2
-        x: 3845
-        y: 2250
-        width: 282
-        height: 998
+        x: 5543
+        y: 2421
+        width: 7
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -525,20 +357,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f23bea338b5c36e439e4447452b0119a
-      internalID: 1832172857
+      spriteID: 63dc36888c831ea459e860ad432f29d7
+      internalID: -346731557
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Door_Tutorial
+      name: spritesheet_tutorial_stage_9
       rect:
         serializedVersion: 2
-        x: 3650
-        y: 2266
-        width: 193
-        height: 836
+        x: 0
+        y: 1082
+        width: 120
+        height: 1087
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -546,8 +378,239 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 851e674452291cb418e5ba537a9c16b1
-      internalID: -239147009
+      spriteID: 954d5fb789faebe4f85212798bac254a
+      internalID: 720385222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_tutorial_stage_10
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 1169
+        width: 289
+        height: 1000
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98bf8c9c4d506994aa232f086be7e352
+      internalID: -66054803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_tutorial_stage_11
+      rect:
+        serializedVersion: 2
+        x: 3848
+        y: 1082
+        width: 1924
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be92abe8dd88dcd4db80c8369545bccc
+      internalID: 274693266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_tutorial_stage_14
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 489
+        width: 132
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77516f4d75abd7b4b86c74db152c3781
+      internalID: -613341526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_tutorial_stage_15
+      rect:
+        serializedVersion: 2
+        x: 3329
+        y: 489
+        width: 136
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2448270c0d7c1b246b3dbb5355fa3808
+      internalID: 955673713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_tutorial_stage_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4339
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b822bfaa1e4bcb4a9a9a53ad1d56145
+      internalID: -821473045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_tutorial_stage_19
+      rect:
+        serializedVersion: 2
+        x: 1927
+        y: 3253
+        width: 1920
+        height: 1080
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 295d3483e2bb1e8418d7adea5df34774
+      internalID: 2124515364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_tutorial_stage_20
+      rect:
+        serializedVersion: 2
+        x: 1014
+        y: 3251
+        width: 329
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9955151935b98b94f8d77cd4e0729e1c
+      internalID: 864477651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_tutorial_stage_21
+      rect:
+        serializedVersion: 2
+        x: 4962
+        y: 700
+        width: 130
+        height: 158
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec00f0c1745d9444097e7dd168ee8e02
+      internalID: -1832385137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_tutorial_stage_12
+      rect:
+        serializedVersion: 2
+        x: 5134
+        y: 702
+        width: 287
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b17c000901eca468fd045ae1797dc2
+      internalID: -1078587779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_tutorial_stage_13
+      rect:
+        serializedVersion: 2
+        x: 5094
+        y: 536
+        width: 120
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e268f08dcba26543ae7c772f375bd8a
+      internalID: 406655352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spritesheet_tutorial_stage_16
+      rect:
+        serializedVersion: 2
+        x: 5395
+        y: 532
+        width: 110
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf806b9e23538d44996ea2910681cde
+      internalID: 1279228435
       vertices: []
       indices: 
       edges: []
@@ -563,24 +626,28 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      CatBed_tutorial: 962748609
-      CatTower_Tutorial: 1334813980
-      Curtain_tutorial: -609353655
-      Diary_Tutorial: -1271377810
-      Door_Tutorial: -239147009
-      Doorhandle1_Tutorial: -819520266
-      Doorhandle2_tutorial: -2135099138
-      Drawer1_tutorial: -859046923
-      Floor_tutorial: 417912653
-      Frame1_Tutorial: -157591795
-      Frame2_tutorial: 145401939
-      Frame3_tutorial: 175340751
-      Frame4_Tutorial: 1657246046
-      Glass_Tutorial: 1832172857
-      Shelf1_Tutorial: 1630738784
-      Wall_tutorial: 481211704
       spritesheet_tutorial_stage_0: 1893295497
+      spritesheet_tutorial_stage_1: -1816450271
+      spritesheet_tutorial_stage_10: -66054803
+      spritesheet_tutorial_stage_11: 274693266
+      spritesheet_tutorial_stage_12: -1078587779
+      spritesheet_tutorial_stage_13: 406655352
+      spritesheet_tutorial_stage_14: -613341526
+      spritesheet_tutorial_stage_15: 955673713
+      spritesheet_tutorial_stage_16: 1279228435
+      spritesheet_tutorial_stage_17: 1874073161
+      spritesheet_tutorial_stage_18: -821473045
+      spritesheet_tutorial_stage_19: 2124515364
+      spritesheet_tutorial_stage_2: -1816960409
+      spritesheet_tutorial_stage_20: 864477651
+      spritesheet_tutorial_stage_21: -1832385137
       spritesheet_tutorial_stage_3: 286681966
+      spritesheet_tutorial_stage_4: -431607942
+      spritesheet_tutorial_stage_5: 798427795
+      spritesheet_tutorial_stage_6: 401434978
+      spritesheet_tutorial_stage_7: -1699919293
+      spritesheet_tutorial_stage_8: -346731557
+      spritesheet_tutorial_stage_9: 720385222
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

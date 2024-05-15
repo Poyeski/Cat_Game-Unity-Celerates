@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 9
+  spritePixelsToUnits: 12
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,12 +113,12 @@ TextureImporter:
       name: Cat Walk_0
       rect:
         serializedVersion: 2
-        x: 207
-        y: 710
-        width: 455
-        height: 515
+        x: 0
+        y: 650
+        width: 866
+        height: 650
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,12 +134,12 @@ TextureImporter:
       name: Cat Walk_1
       rect:
         serializedVersion: 2
-        x: 1039
-        y: 713
-        width: 488
-        height: 519
+        x: 866
+        y: 650
+        width: 866
+        height: 650
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,12 +155,12 @@ TextureImporter:
       name: Cat Walk_2
       rect:
         serializedVersion: 2
-        x: 1904
-        y: 709
-        width: 490
-        height: 515
+        x: 1732
+        y: 650
+        width: 866
+        height: 650
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -176,12 +176,12 @@ TextureImporter:
       name: Cat Walk_3
       rect:
         serializedVersion: 2
-        x: 222
-        y: 61
-        width: 440
-        height: 514
+        x: 0
+        y: 0
+        width: 866
+        height: 650
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -197,12 +197,12 @@ TextureImporter:
       name: Cat Walk_4
       rect:
         serializedVersion: 2
-        x: 1072
-        y: 62
-        width: 455
-        height: 516
+        x: 866
+        y: 0
+        width: 866
+        height: 650
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -218,12 +218,12 @@ TextureImporter:
       name: Cat Walk_5
       rect:
         serializedVersion: 2
-        x: 1989
-        y: 58
-        width: 405
-        height: 522
+        x: 1732
+        y: 0
+        width: 866
+        height: 650
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

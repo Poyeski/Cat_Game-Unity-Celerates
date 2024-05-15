@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 9
+  spritePixelsToUnits: 12
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,10 +113,10 @@ TextureImporter:
       name: Cat Sit Idle_0
       rect:
         serializedVersion: 2
-        x: 258
-        y: 708
-        width: 404
-        height: 474
+        x: 0
+        y: 650
+        width: 866
+        height: 650
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: Cat Sit Idle_1
       rect:
         serializedVersion: 2
-        x: 1124
-        y: 708
-        width: 403
-        height: 474
+        x: 866
+        y: 650
+        width: 866
+        height: 650
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: Cat Sit Idle_2
       rect:
         serializedVersion: 2
-        x: 1989
-        y: 708
-        width: 405
-        height: 474
+        x: 1732
+        y: 650
+        width: 866
+        height: 650
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: Cat Sit Idle_3
       rect:
         serializedVersion: 2
-        x: 258
-        y: 58
-        width: 404
-        height: 473
+        x: 0
+        y: 0
+        width: 866
+        height: 650
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: Cat Sit Idle_4
       rect:
         serializedVersion: 2
-        x: 1124
-        y: 58
-        width: 403
-        height: 473
+        x: 866
+        y: 0
+        width: 866
+        height: 650
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +218,10 @@ TextureImporter:
       name: Cat Sit Idle_5
       rect:
         serializedVersion: 2
-        x: 1990
-        y: 58
-        width: 404
-        height: 473
+        x: 1732
+        y: 0
+        width: 866
+        height: 650
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

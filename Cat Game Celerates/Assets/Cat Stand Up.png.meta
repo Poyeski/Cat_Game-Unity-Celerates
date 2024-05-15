@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 9
+  spritePixelsToUnits: 12
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,12 +113,12 @@ TextureImporter:
       name: Cat Stand Up_0
       rect:
         serializedVersion: 2
-        x: 261
-        y: 709
-        width: 400
-        height: 473
+        x: 0
+        y: 650
+        width: 866
+        height: 650
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -134,12 +134,12 @@ TextureImporter:
       name: Cat Stand Up_1
       rect:
         serializedVersion: 2
-        x: 1124
-        y: 711
-        width: 403
-        height: 518
+        x: 866
+        y: 650
+        width: 866
+        height: 650
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -155,12 +155,12 @@ TextureImporter:
       name: Cat Stand Up_2
       rect:
         serializedVersion: 2
-        x: 238
-        y: 61
-        width: 423
-        height: 472
+        x: 0
+        y: 0
+        width: 866
+        height: 650
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
