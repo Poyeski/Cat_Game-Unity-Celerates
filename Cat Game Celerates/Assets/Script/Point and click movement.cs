@@ -8,17 +8,19 @@ public class Pointandclickmovement : MonoBehaviour
     public float speed = 5.0f; 
     private Vector3 ClickedPosition; 
     private bool isMoving = false;
+    private Vector3 lastPosition;
+
     public bool IsMoving 
     {
         private set
         {
-        if(isMoving != value)
+            if(isMoving != value)
             {
                 isMoving = value; 
                 animator.SetBool("Is_walking", value);
             }
         }
-            get
+        get
         {
             return isMoving;
         }
@@ -28,7 +30,8 @@ public class Pointandclickmovement : MonoBehaviour
     void Start()
     {
         ClickedPosition = transform.position; 
-        animator = GetComponent <Animator> ();
+        animator = GetComponent<Animator>();
+        lastPosition = transform.position;
     }
 
     void Update()
@@ -53,7 +56,19 @@ public class Pointandclickmovement : MonoBehaviour
 
     void MoveCharacter()
     {
+        // Determine direction
+        Vector3 direction = ClickedPosition - transform.position;
+
+        // If direction is not zero, flip the character
+        if (direction.x != 0)
+        {
+            Vector3 localScale = transform.localScale;
+            localScale.x = Mathf.Sign(direction.x) * Mathf.Abs(localScale.x);
+            transform.localScale = localScale;
+        }
+
         transform.position = Vector3.MoveTowards(transform.position, ClickedPosition, speed * Time.deltaTime);
+
         if (transform.position == ClickedPosition)
         {
             IsMoving = false;
@@ -61,7 +76,7 @@ public class Pointandclickmovement : MonoBehaviour
     }
 
     public void EnableMovement(bool enable)
-     {
+    {
         canMove = enable;
         if (!canMove)
         {
