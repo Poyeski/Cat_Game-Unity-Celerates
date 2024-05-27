@@ -10,7 +10,7 @@ public class DialogueText : MonoBehaviour
     public GameObject dialogueBox; 
     public TextMeshProUGUI dialogueText;
     private Queue<string> sentences;
-    public Pointandclickmovement playerController;
+    public PointAndClickMovement playerController;
     public bool isDialogueActive = false;
 
     void Awake()
