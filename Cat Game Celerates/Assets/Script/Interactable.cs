@@ -5,6 +5,8 @@ using UnityEngine;
 public class Interactable : MonoBehaviour
 {
     public string[] dialogueLines;
+    public Vector3 interactionPosition;
+    public string interactionAnimation;
 
     private void OnMouseDown()
     {
@@ -12,6 +14,11 @@ public class Interactable : MonoBehaviour
         if (DialogueText.Instance != null && !DialogueText.Instance.isDialogueActive && dialogueLines.Length > 0)
         {
             DialogueText.Instance.StartDialogue(dialogueLines);
+        }
+        InteractiveMovement player = FindObjectOfType<InteractiveMovement>();
+        if (player != null)
+        {
+            player.InteractWithObject(interactionPosition, interactionAnimation);
         }
     }
 }
