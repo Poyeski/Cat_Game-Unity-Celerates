@@ -5,6 +5,7 @@ using UnityEngine;
 public class PointAndClickMovement : MonoBehaviour
 {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     public float speed = 5.0f; 
     private Vector3 ClickedPosition; 
     private bool isMoving = false;
@@ -49,6 +50,49 @@ public class PointAndClickMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         clickedPosition = transform.position;
 >>>>>>> Stashed changes
+=======
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
+    private bool isFacingRight = true;
+    private bool isMoving = false;
+    private float screenLeftBound;
+    private float screenRightBound;
+    private Rigidbody2D rb;
+    public float moveSpeed = 5f;
+    private Vector3 clickedPosition;
+    private bool canMove = true;
+
+    // Additional margin for left and right boundaries
+    public float boundaryMargin = 2.0f;
+
+    public bool IsMoving
+    {
+        private set
+        {
+            if (isMoving != value)
+            {
+                isMoving = value;
+                animator.SetBool("Is_walking", value);
+            }
+        }
+        get
+        {
+            return isMoving;
+        }
+    }
+
+    void Start()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+        clickedPosition = transform.position;
+
+        // Calculate screen boundaries with margin
+        float halfPlayerWidth = spriteRenderer.bounds.extents.x;
+        screenLeftBound = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, Camera.main.transform.position.z)).x + halfPlayerWidth - boundaryMargin;
+        screenRightBound = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0, Camera.main.transform.position.z)).x - halfPlayerWidth + boundaryMargin;
+>>>>>>> Stashed changes
     }
 
     void Update()
@@ -73,10 +117,23 @@ public class PointAndClickMovement : MonoBehaviour
         {
             MoveCharacter();
         }
+
+        // Clamp the position to prevent the character from moving out of screen bounds
+        Vector3 clampedPosition = new Vector3(Mathf.Clamp(transform.position.x, screenLeftBound, screenRightBound), transform.position.y, transform.position.z);
+        transform.position = clampedPosition;
+    }
+
+    void FixedUpdate()
+    {
+        if (IsMoving)
+        {
+            MoveCharacter();
+        }
     }
 
     void SetPosition()
     {
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
         ClickedPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         ClickedPosition.z = transform.position.z; 
@@ -94,6 +151,24 @@ public class PointAndClickMovement : MonoBehaviour
         else if (clickedPosition.x > transform.position.x && !isFacingRight)
         {
             Flip();
+        }
+
+        IsMoving = true;
+>>>>>>> Stashed changes
+=======
+        clickedPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        clickedPosition.z = transform.position.z;
+
+        // Clamp the clicked position within the screen bounds
+        clickedPosition.x = Mathf.Clamp(clickedPosition.x, screenLeftBound, screenRightBound);
+
+        // Flip the sprite based on direction
+        Vector3 direction = clickedPosition - transform.position;
+        if (direction.x != 0)
+        {
+            Vector3 localScale = transform.localScale;
+            localScale.x = Mathf.Sign(direction.x) * Mathf.Abs(localScale.x);
+            transform.localScale = localScale;
         }
 
         IsMoving = true;
@@ -141,7 +216,12 @@ public class PointAndClickMovement : MonoBehaviour
     void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
+<<<<<<< Updated upstream
         Gizmos.DrawLine(new Vector3(-screenBound, Camera.main.orthographicSize, 0), new Vector3(-screenBound, -Camera.main.orthographicSize, 0));
         Gizmos.DrawLine(new Vector3(screenBound, Camera.main.orthographicSize, 0), new Vector3(screenBound, -Camera.main.orthographicSize, 0));
+=======
+        Gizmos.DrawLine(new Vector3(screenLeftBound, Camera.main.orthographicSize, 0), new Vector3(screenLeftBound, -Camera.main.orthographicSize, 0));
+        Gizmos.DrawLine(new Vector3(screenRightBound, Camera.main.orthographicSize, 0), new Vector3(screenRightBound, -Camera.main.orthographicSize, 0));
+>>>>>>> Stashed changes
     }
 }
