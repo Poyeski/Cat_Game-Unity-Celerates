@@ -56,7 +56,7 @@ public class DialogueText : MonoBehaviour
         imageShowIndex = showImageAtIndex;
         currentSentenceIndex = 0;
 
-        overlayImage.gameObject.SetActive(false); // Ensure the overlay image is hidden initially
+        overlayImage.gameObject.SetActive(false);
 
         dialogueBox.SetActive(true);
         DisplayNextSentence();
@@ -90,7 +90,7 @@ public class DialogueText : MonoBehaviour
         dialogueBox.SetActive(false);
         playerController.EnableMovement(true);
         isDialogueActive = false;
-        overlayImage.gameObject.SetActive(false); // Hide the image when dialogue ends
+        overlayImage.gameObject.SetActive(false);
     }
 
     private void Update()
