@@ -84,20 +84,10 @@ public class PointAndClickMovement : MonoBehaviour
 
     void MoveCharacter()
     {
-        // Determine direction
-        Vector3 direction = clickedPosition - transform.position;
+        Vector3 newPosition = Vector3.MoveTowards(rb.position, clickedPosition, moveSpeed * Time.fixedDeltaTime);
+        rb.MovePosition(newPosition);
 
-        // If direction is not zero, flip the character
-        if (direction.x != 0)
-        {
-            Vector3 localScale = transform.localScale;
-            localScale.x = Mathf.Sign(direction.x) * Mathf.Abs(localScale.x);
-            transform.localScale = localScale;
-        }
-
-        transform.position = Vector3.MoveTowards(transform.position, clickedPosition, moveSpeed * Time.deltaTime);
-
-        if (transform.position == clickedPosition)
+        if (Vector3.Distance(rb.position, clickedPosition) < 0.1f)
         {
             IsMoving = false;
         }
