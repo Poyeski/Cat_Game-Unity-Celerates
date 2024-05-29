@@ -16,6 +16,8 @@ public class DialogueText : MonoBehaviour
     private Sprite imageToShow;
     private int imageShowIndex;
     private int currentSentenceIndex;
+    public InteractiveMovement scriptInteractiveMovement;
+
 
     void Awake()
     {
@@ -60,6 +62,8 @@ public class DialogueText : MonoBehaviour
 
         dialogueBox.SetActive(true);
         DisplayNextSentence();
+        scriptInteractiveMovement.canMove = false;
+        scriptInteractiveMovement.isInteracting = true;
     }
 
     public void DisplayNextSentence()
@@ -91,13 +95,16 @@ public class DialogueText : MonoBehaviour
         playerController.EnableMovement(true);
         isDialogueActive = false;
         overlayImage.gameObject.SetActive(false);
+        scriptInteractiveMovement.canMove = true;
+        scriptInteractiveMovement.isInteracting = false;
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0) && dialogueBox.activeSelf)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && dialogueBox.activeSelf || Input.GetKeyDown(KeyCode.Space) && dialogueBox.activeSelf )
         {
             DisplayNextSentence();
+
         }
     }
 }

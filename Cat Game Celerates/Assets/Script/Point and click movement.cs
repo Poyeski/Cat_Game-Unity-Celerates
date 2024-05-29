@@ -18,7 +18,7 @@ public class PointAndClickMovement : MonoBehaviour
 
     public bool IsMoving
     {
-        private set
+         set
         {
             if (isMoving != value)
             {
@@ -50,12 +50,12 @@ public class PointAndClickMovement : MonoBehaviour
             SetPosition();
         }
 
-        if (IsMoving)
-        {
-            MoveCharacter();
-        }
-        Vector3 clampedPosition = new Vector3(Mathf.Clamp(transform.position.x, screenLeftBound, screenRightBound), transform.position.y, transform.position.z);
-        transform.position = clampedPosition;
+        // if (IsMoving)
+        // {
+        //     MoveCharacter();
+        // }
+        //Vector3 clampedPosition = new Vector3(Mathf.Clamp(transform.position.x, screenLeftBound, screenRightBound), transform.position.y, transform.position.z);
+       // transform.position = clampedPosition;
     }
 
     void FixedUpdate()
@@ -80,16 +80,19 @@ public class PointAndClickMovement : MonoBehaviour
         }
 
         IsMoving = true;
+        Debug.Log($"is moving value change {IsMoving} by SetPosition", this);
     }
 
     void MoveCharacter()
     {
         Vector3 newPosition = Vector3.MoveTowards(rb.position, clickedPosition, moveSpeed * Time.fixedDeltaTime);
         rb.MovePosition(newPosition);
+        Debug.Log(Vector3.Distance(rb.position, clickedPosition));
 
-        if (Vector3.Distance(rb.position, clickedPosition) < 0.1f)
+        if (Vector3.Distance(rb.position, clickedPosition) < 2f)
         {
             IsMoving = false;
+            Debug.Log($"is moving value change {IsMoving} by MoveCharacter", this);
         }
     }
 
@@ -99,6 +102,7 @@ public class PointAndClickMovement : MonoBehaviour
         if (!canMove)
         {
             IsMoving = false;
+            Debug.Log($"is moving value change {IsMoving} by EnableMovement", this);
         }
     }
 
@@ -108,6 +112,8 @@ public class PointAndClickMovement : MonoBehaviour
         {
             Debug.Log("Entered Boundary: " + collision.gameObject.name);
             IsMoving = false;
+            Debug.Log($"is moving value change {IsMoving} by OnTriggerEnter2D", this);
+            
             clickedPosition = transform.position;
         }
     }

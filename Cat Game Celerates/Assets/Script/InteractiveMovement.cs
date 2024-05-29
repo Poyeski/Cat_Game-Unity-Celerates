@@ -46,10 +46,10 @@ public class InteractiveMovement : MonoBehaviour
             SetTargetPosition(Camera.main.ScreenToWorldPoint(Input.mousePosition));
         }
 
-        if (IsMoving)
-        {
-            MoveCharacter();
-        }
+        // if (IsMoving)
+        // {
+            // MoveCharacter();
+        // }
     }
 
     void FixedUpdate()
@@ -71,6 +71,7 @@ public class InteractiveMovement : MonoBehaviour
             transform.localScale = localScale;
         }
         IsMoving = true;
+         Debug.Log($"is moving value change {IsMoving} by SetTargetPosition", this);
     }
 
     void MoveCharacter()
@@ -78,9 +79,12 @@ public class InteractiveMovement : MonoBehaviour
         Vector3 newPosition = Vector3.MoveTowards(rb.position, targetPosition, moveSpeed * Time.fixedDeltaTime);
         rb.MovePosition(newPosition);
 
-        if (Vector3.Distance(rb.position, targetPosition) < 0.1f)
+        if (Vector3.Distance(rb.position, targetPosition) < 2f)
         {
             IsMoving = false;
+           
+            Debug.Log($"is moving value change {IsMoving} by MoveCharacter", this);
+            
         }
     }
 
@@ -90,7 +94,7 @@ public class InteractiveMovement : MonoBehaviour
         isInteracting = true;
         targetPosition = interactionPosition;
         SetTargetPosition(interactionPosition);
-        StartCoroutine(PerformInteraction(interactionAnimation));
+        //StartCoroutine(PerformInteraction(interactionAnimation));
     }
 
     private IEnumerator PerformInteraction(string interactionAnimation)
@@ -117,6 +121,8 @@ public class InteractiveMovement : MonoBehaviour
             Debug.Log("Entered Boundary: " + collision.gameObject.name);
             IsMoving = false;
             targetPosition = transform.position;
+
+             Debug.Log($"is moving value change {IsMoving} by OnTriggerEnter2D", this);
         }
     }
 }
