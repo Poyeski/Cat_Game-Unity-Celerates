@@ -15,10 +15,11 @@ public class PointAndClickMovement : MonoBehaviour
     public float boundaryMargin = 2.0f;
     public float moveSpeed = 5f;
     private Vector3 clickedPosition;
+    private bool isWithinBoundary = false;
 
     public bool IsMoving
     {
-         set
+        set
         {
             if (isMoving != value)
             {
@@ -50,12 +51,16 @@ public class PointAndClickMovement : MonoBehaviour
             SetPosition();
         }
 
-        // if (IsMoving)
-        // {
-        //     MoveCharacter();
-        // }
-        //Vector3 clampedPosition = new Vector3(Mathf.Clamp(transform.position.x, screenLeftBound, screenRightBound), transform.position.y, transform.position.z);
-       // transform.position = clampedPosition;
+        if (isWithinBoundary)
+        {
+            Debug.Log("Player is within the boundary");
+            IsMoving = false;
+        }
+        else
+        {
+            Debug.Log("Player is outside the boundary");
+            IsMoving = true;
+        }
     }
 
     void FixedUpdate()
@@ -111,10 +116,18 @@ public class PointAndClickMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Boundary"))
         {
             Debug.Log("Entered Boundary: " + collision.gameObject.name);
+            isWithinBoundary = true;
             IsMoving = false;
             Debug.Log($"is moving value change {IsMoving} by OnTriggerEnter2D", this);
-            
             clickedPosition = transform.position;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Boundary"))
+        {
+            isWithinBoundary = false;
         }
     }
 
