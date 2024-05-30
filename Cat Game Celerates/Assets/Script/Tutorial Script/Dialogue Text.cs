@@ -32,71 +32,133 @@ public class DialogueText : MonoBehaviour
         }
 
         sentences = new Queue<string>();
-        dialogueBox.SetActive(false);
+
+        if (dialogueBox == null)
+        {
+            Debug.LogError("dialogueBox is not assigned in the inspector.");
+        }
+        else
+        {
+            dialogueBox.SetActive(false);
+        }
+
+        if (dialogueText == null)
+        {
+            Debug.LogError("dialogueText is not assigned in the inspector.");
+        }
+
+        if (overlayImage == null)
+        {
+            Debug.LogError("overlayImage is not assigned in the inspector.");
+        }
+
+        if (playerController == null)
+        {
+            Debug.LogError("playerController is not assigned in the inspector.");
+        }
+
+        if (scriptInteractiveMovement == null)
+        {
+            Debug.LogError("scriptInteractiveMovement is not assigned in the inspector.");
+        }
     }
 
     void Start()
     {
-        overlayImage.gameObject.SetActive(false); // Hide the overlay image at the start
+        if (overlayImage != null)
+        {
+            overlayImage.gameObject.SetActive(false); // Hide the overlay image at the start
+        }
     }
 
-    public void StartDialogue(string[] lines, Sprite image = null, int showImageAtIndex = -1)
+
+        public void StartDialogue(string[] lines, Sprite image = null, int showImageAtIndex = -1)
     {
         if (isDialogueActive) return;
         isDialogueActive = true;
-        playerController.EnableMovement(false);
-        Debug.Log("Starting dialogue with " + lines.Length + " lines.");
+
+        if (playerController != null)
+        {
+            playerController.EnableMovement(false);
+        }
+
         sentences.Clear();
 
         foreach (string line in lines)
         {
             sentences.Enqueue(line);
-            Debug.Log("Enqueued line: " + line);
         }
 
         imageToShow = image;
         imageShowIndex = showImageAtIndex;
         currentSentenceIndex = 0;
 
-        overlayImage.gameObject.SetActive(false);
+        if (overlayImage != null)
+        {
+            overlayImage.gameObject.SetActive(false);
+        }
 
-        dialogueBox.SetActive(true);
+        if (dialogueBox != null)
+        {
+            dialogueBox.SetActive(true);
+        }
+
         DisplayNextSentence();
-        scriptInteractiveMovement.canMove = false;
-        scriptInteractiveMovement.isInteracting = true;
+
+        if (scriptInteractiveMovement != null)
+        {
+            scriptInteractiveMovement.canMove = false;
+            scriptInteractiveMovement.isInteracting = true;
+        }
     }
 
     public void DisplayNextSentence()
     {
-        Debug.Log("Displaying next sentence. Remaining: " + sentences.Count);
         if (sentences.Count == 0)
         {
             EndDialogue();
             return;
         }
 
-        Debug.Log("Current sentence index: " + currentSentenceIndex);
-        if (currentSentenceIndex == imageShowIndex && imageToShow != null)
+        if (currentSentenceIndex == imageShowIndex && imageToShow != null && overlayImage != null)
         {
             overlayImage.sprite = imageToShow;
             overlayImage.gameObject.SetActive(true);
-            Debug.Log("Displaying image: " + imageToShow.name);
         }
 
         string sentence = sentences.Dequeue();
-        Debug.Log("Current sentence: " + sentence);
-        dialogueText.text = sentence;
+        if (dialogueText != null)
+        {
+            dialogueText.text = sentence;
+        }
+
         currentSentenceIndex++;
     }
 
     public void EndDialogue()
     {
-        dialogueBox.SetActive(false);
-        playerController.EnableMovement(true);
+        if (dialogueBox != null)
+        {
+            dialogueBox.SetActive(false);
+        }
+
+        if (playerController != null)
+        {
+            playerController.EnableMovement(true);
+        }
+
         isDialogueActive = false;
-        overlayImage.gameObject.SetActive(false);
-        scriptInteractiveMovement.canMove = true;
-        scriptInteractiveMovement.isInteracting = false;
+
+        if (overlayImage != null)
+        {
+            overlayImage.gameObject.SetActive(false);
+        }
+
+        if (scriptInteractiveMovement != null)
+        {
+            scriptInteractiveMovement.canMove = true;
+            scriptInteractiveMovement.isInteracting = false;
+        }
     }
 
     private void Update()
