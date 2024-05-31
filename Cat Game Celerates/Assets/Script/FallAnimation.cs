@@ -5,7 +5,8 @@ using UnityEngine;
 public class FallAnimation : MonoBehaviour
 {
     public Animator animator;
-    public string fallAnimation1;
+    public string fallAnimation;
+
     private void Start()
     {
         if (animator == null)
