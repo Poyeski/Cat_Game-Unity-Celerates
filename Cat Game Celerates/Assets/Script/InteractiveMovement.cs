@@ -51,7 +51,7 @@ public class InteractiveMovement : MonoBehaviour
             Debug.Log("Player is within the boundary");
             IsMoving = false;
             Vector3 currentPosition = transform.position;
-            Vector3 AfterHit = new Vector3(currentPosition.x, (float)((float)currentPosition.y - 0.001), currentPosition.z);
+            Vector3 AfterHit = new Vector3((float)((float)currentPosition.x - 0.001), (float)((float)currentPosition.y - 0.001), currentPosition.z);
             transform.position = AfterHit;
         }
         else
@@ -136,7 +136,7 @@ public class InteractiveMovement : MonoBehaviour
             IsMoving = false;
             Debug.Log($"is moving value change {IsMoving} by OnTriggerEnter2D", this);
             Vector3 currentPosition = transform.position;
-            Vector3 AfterHit = new Vector3(currentPosition.x, (float)((float)currentPosition.y - 0.001), currentPosition.z);
+            Vector3 AfterHit = new Vector3((float)((float)currentPosition.x - 0.001), (float)((float)currentPosition.y - 0.001), currentPosition.z);
             transform.position = AfterHit;
         }
     }
