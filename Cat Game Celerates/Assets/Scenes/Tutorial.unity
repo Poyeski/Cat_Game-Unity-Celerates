@@ -518,6 +518,7 @@ GameObject:
   - component: {fileID: 245159395}
   - component: {fileID: 245159396}
   - component: {fileID: 245159397}
+  - component: {fileID: 245159398}
   m_Layer: 6
   m_Name: Diary
   m_TagString: Untagged
@@ -621,7 +622,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -669,7 +670,7 @@ Animator:
   m_GameObject: {fileID: 245159392}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8642a364813829845bc012e64685c9e0, type: 2}
+  m_Controller: {fileID: 9100000, guid: 0c4b10cc94f74b949ad3f717c3588763, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -680,6 +681,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &245159398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245159392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 259e361e53cc8a84dac54a54646dce1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 245159397}
+  fallAnimation1: FallTest
 --- !u!1 &247964482
 GameObject:
   m_ObjectHideFlags: 0
@@ -1146,7 +1161,7 @@ GameObject:
   - component: {fileID: 576242203}
   m_Layer: 0
   m_Name: Cat
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1224,7 +1239,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.29694217, y: -2.3930044}
+  m_Offset: {x: -0.5361814, y: -20.7455}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1235,7 +1250,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.48281, y: 0.71582794}
+  m_Size: {x: 27.06971, y: 3.150826}
   m_EdgeRadius: 0
 --- !u!212 &576242201
 SpriteRenderer:
@@ -1755,7 +1770,7 @@ GameObject:
   - component: {fileID: 945897150}
   - component: {fileID: 945897149}
   m_Layer: 0
-  m_Name: Square (2)
+  m_Name: Drawer Boundary
   m_TagString: Boundary
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1885,7 +1900,7 @@ GameObject:
   - component: {fileID: 960066906}
   - component: {fileID: 960066905}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Wall Boundary
   m_TagString: Boundary
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1997,8 +2012,8 @@ Transform:
   m_GameObject: {fileID: 960066904}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.154, y: 29.7, z: 0}
-  m_LocalScale: {x: 215.31827, y: 62.245804, z: 1}
+  m_LocalPosition: {x: -1.154, y: 28.8575, z: 0}
+  m_LocalScale: {x: 215.31827, y: 63.926743, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
