@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Boundary
   - CatTower
+  - Drawer
   layers:
   - Default
   - TransparentFX

@@ -1145,6 +1145,9 @@ GameObject:
   - component: {fileID: 576242204}
   - component: {fileID: 576242203}
   - component: {fileID: 576242205}
+  - component: {fileID: 576242207}
+  - component: {fileID: 576242206}
+  - component: {fileID: 576242208}
   m_Layer: 0
   m_Name: Cat
   m_TagString: Player
@@ -1298,7 +1301,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 576242197}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -8.1, y: -24.2, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1356,6 +1359,45 @@ MonoBehaviour:
   animator: {fileID: 576242203}
   PlayerAnimation: 
   boolParameterName: IsScratching
+--- !u!114 &576242206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576242197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39660814d8eaeed4193efa3d1a7bf804, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 576242203}
+--- !u!114 &576242207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576242197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b4bf2ad56577d546bf74102348cb382, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 576242203}
+--- !u!114 &576242208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576242197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77eb9092429014f45bb33ef1ee2e7fc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactiveMovement: {fileID: 0}
 --- !u!1 &637156888
 GameObject:
   m_ObjectHideFlags: 0
@@ -3005,7 +3047,7 @@ GameObject:
   - component: {fileID: 2115154192}
   m_Layer: 6
   m_Name: Drawer1_tutorial
-  m_TagString: Untagged
+  m_TagString: Drawer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3140,7 +3182,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3177,7 +3219,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 1304882326}
   - {fileID: 1381663996}
-  - {fileID: 576242202}
   - {fileID: 1911812258}
   - {fileID: 501524251}
   - {fileID: 1758664101}
@@ -3185,3 +3226,4 @@ SceneRoots:
   - {fileID: 960066907}
   - {fileID: 945897151}
   - {fileID: 2035051104}
+  - {fileID: 576242202}
