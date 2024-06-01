@@ -63,7 +63,7 @@ public class DialogueText : MonoBehaviour
         dialogueBox.SetActive(true);
         DisplayNextSentence();
         scriptInteractiveMovement.canMove = false;
-        scriptInteractiveMovement.isInteracting = true;
+        scriptInteractiveMovement.isInteracting = true; //new
     }
 
     public void DisplayNextSentence()
@@ -96,12 +96,12 @@ public class DialogueText : MonoBehaviour
         isDialogueActive = false;
         overlayImage.gameObject.SetActive(false);
         scriptInteractiveMovement.canMove = true;
-        scriptInteractiveMovement.isInteracting = false;
+        scriptInteractiveMovement.isInteracting = false; //new
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0) && dialogueBox.activeSelf || Input.GetKeyDown(KeyCode.Space) && dialogueBox.activeSelf )
+        if (Input.GetKeyDown(KeyCode.Mouse0) && dialogueBox.activeSelf || Input.GetKeyDown(KeyCode.Space) && dialogueBox.activeSelf ) //new
         {
             DisplayNextSentence();
 
