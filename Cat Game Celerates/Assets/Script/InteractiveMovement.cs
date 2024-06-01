@@ -13,7 +13,8 @@ public class InteractiveMovement : MonoBehaviour
     public bool canMove = true;
     public float moveSpeed = 5f;
     private Vector3 targetPosition;
-    
+    private bool isWithinBoundary = false;
+
 
     public bool IsMoving
     {
@@ -45,10 +46,22 @@ public class InteractiveMovement : MonoBehaviour
         {
             SetTargetPosition(Camera.main.ScreenToWorldPoint(Input.mousePosition));
         }
+        if (isWithinBoundary)
+        {
+            Debug.Log("Player is within the boundary");
+            IsMoving = false;
+            Vector3 currentPosition = transform.position;
+            Vector3 AfterHit = new Vector3((float)((float)currentPosition.x - 0.001), (float)((float)currentPosition.y - 0.001), currentPosition.z);
+            transform.position = AfterHit;
+        }
+        else
+        {
+            Debug.Log("Player is outside the boundary");
 
+        }
         // if (IsMoving)
         // {
-            // MoveCharacter();
+        // MoveCharacter();
         // }
     }
 
@@ -119,10 +132,28 @@ public class InteractiveMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Boundary"))
         {
             Debug.Log("Entered Boundary: " + collision.gameObject.name);
+            isWithinBoundary = true;
             IsMoving = false;
-            targetPosition = transform.position;
+            Debug.Log($"is moving value change {IsMoving} by OnTriggerEnter2D", this);
+            Vector3 currentPosition = transform.position;
+            Vector3 AfterHit = new Vector3((float)((float)currentPosition.x - 0.001), (float)((float)currentPosition.y - 0.001), currentPosition.z);
+            transform.position = AfterHit;
+        }
+    }
 
-             Debug.Log($"is moving value change {IsMoving} by OnTriggerEnter2D", this);
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Boundary"))
+        {
+            isWithinBoundary = false;
+        }
+    }
+
+    void AfterTrigger(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Boundary"))
+        {
+            targetPosition = transform.position;
         }
     }
 }
