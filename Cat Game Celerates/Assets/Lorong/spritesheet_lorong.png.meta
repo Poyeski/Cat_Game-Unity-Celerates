@@ -113,9 +113,9 @@ TextureImporter:
       name: spritesheet_lorong_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 682
         y: 768
-        width: 682.6667
+        width: 684
         height: 384
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -134,10 +134,10 @@ TextureImporter:
       name: spritesheet_lorong_1
       rect:
         serializedVersion: 2
-        x: 682
-        y: 768
-        width: 682.6667
-        height: 384
+        x: 1662
+        y: 998
+        width: 97
+        height: 126
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,10 +155,10 @@ TextureImporter:
       name: spritesheet_lorong_2
       rect:
         serializedVersion: 2
-        x: 1364
-        y: 768
-        width: 682.6667
-        height: 384
+        x: 387
+        y: 956
+        width: 38
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,10 +176,10 @@ TextureImporter:
       name: spritesheet_lorong_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 384
-        width: 682.6667
-        height: 384
+        x: 264
+        y: 572
+        width: 39
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: spritesheet_lorong_4
       rect:
         serializedVersion: 2
-        x: 682
-        y: 384
-        width: 682.6667
-        height: 384
+        x: 1654
+        y: 589
+        width: 21
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,10 +218,10 @@ TextureImporter:
       name: spritesheet_lorong_5
       rect:
         serializedVersion: 2
-        x: 1364
+        x: 682
         y: 384
-        width: 682.6667
-        height: 384
+        width: 684
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,10 +239,10 @@ TextureImporter:
       name: spritesheet_lorong_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 682.6667
-        height: 384
+        x: 247
+        y: 49
+        width: 196
+        height: 157
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,10 +260,10 @@ TextureImporter:
       name: spritesheet_lorong_7
       rect:
         serializedVersion: 2
-        x: 682
-        y: 0
-        width: 682.6667
-        height: 384
+        x: 1180
+        y: 68
+        width: 149
+        height: 281
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
