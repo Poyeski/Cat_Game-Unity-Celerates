@@ -22,6 +22,10 @@ public class InteractionAnimation : MonoBehaviour
         {
             animator.SetBool(boolParameterName, true);
         }
+        if (collision.CompareTag("Drawer"))
+        {
+            animator.SetTrigger("DrawerTrigger");
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
