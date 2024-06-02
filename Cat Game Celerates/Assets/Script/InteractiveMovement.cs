@@ -14,6 +14,7 @@ public class InteractiveMovement : MonoBehaviour
     public float moveSpeed = 5f;
     private Vector3 targetPosition;
     private bool isWithinBoundary = false;
+    private bool isWithinBoundaryUp = false;
 
 
     public bool IsMoving
@@ -53,6 +54,14 @@ public class InteractiveMovement : MonoBehaviour
             Vector3 currentPosition = transform.position;
             Vector3 AfterHit = new Vector3((float)((float)currentPosition.x - 0.001), (float)((float)currentPosition.y - 0.001), currentPosition.z);
             transform.position = AfterHit;
+        }
+        if (isWithinBoundaryUp)
+        {
+            Debug.Log("Player is within the  Up boundary");
+            IsMoving = false;
+            Vector3 currentPosition = transform.position;
+            Vector3 AfterHitUp = new Vector3((float)((float)currentPosition.x + 0.001), (float)((float)currentPosition.y + 0.001), currentPosition.z);
+            transform.position = AfterHitUp;
         }
         else
         {
@@ -139,6 +148,16 @@ public class InteractiveMovement : MonoBehaviour
             Vector3 AfterHit = new Vector3((float)((float)currentPosition.x - 0.001), (float)((float)currentPosition.y - 0.001), currentPosition.z);
             transform.position = AfterHit;
         }
+        if (collision.gameObject.CompareTag("BoundaryUp"))
+        {
+            Debug.Log("Entered Boundary: " + collision.gameObject.name);
+            isWithinBoundaryUp = true;
+            IsMoving = false;
+            Debug.Log($"is moving value change {IsMoving} by OnTriggerEnter2D", this);
+            Vector3 currentPosition = transform.position;
+            Vector3 AfterHitUp = new Vector3((float)((float)currentPosition.x + 0.001), (float)((float)currentPosition.y + 0.001), currentPosition.z);
+            transform.position = AfterHitUp;
+        }
     }
 
     void OnTriggerExit2D(Collider2D collision)
@@ -146,6 +165,10 @@ public class InteractiveMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("Boundary"))
         {
             isWithinBoundary = false;
+        }
+        if (collision.gameObject.CompareTag("BoundaryUp"))
+        {
+            isWithinBoundaryUp = false;
         }
     }
 

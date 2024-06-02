@@ -19,7 +19,7 @@ public class FallAnimation : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            animator.SetTrigger("Trigger");
+            animator.SetTrigger("Fall");
         }
     }
 
