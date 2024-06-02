@@ -15,6 +15,7 @@ public class InteractiveMovement : MonoBehaviour
     private Vector3 targetPosition;
     private bool isWithinBoundary = false;
     private bool isWithinBoundaryUp = false;
+    public static bool PlayerWakeUp = false;
 
 
     public bool IsMoving
@@ -26,6 +27,7 @@ public class InteractiveMovement : MonoBehaviour
                 isMoving = value;
                 animator.SetBool("Is_walking", value);
             }
+            PlayerWakeUp = true;
         }
         get
         {
@@ -39,8 +41,18 @@ public class InteractiveMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         targetPosition = transform.position;
+        StartCoroutine(CheckWake());
     }
 
+    IEnumerator CheckWake()
+    {
+        if(PlayerWakeUp == true)
+        {
+            animator.SetBool("Is_walking", true);
+            yield return null;//wait for new frame
+            animator.SetBool("Is_walking", false);
+        }
+    }
     void Update()
     {
         if (canMove && !isInteracting && Input.GetMouseButtonDown(0))

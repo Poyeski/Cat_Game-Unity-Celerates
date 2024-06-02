@@ -815,7 +815,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.7408445}
+  m_Offset: {x: 0.21463108, y: 0.7408445}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -826,7 +826,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 2.481689}
+  m_Size: {x: 1.4292622, y: 2.481689}
   m_EdgeRadius: 0
 --- !u!4 &891734022
 Transform:
@@ -1019,6 +1019,9 @@ MonoBehaviour:
   animator: {fileID: 1297811983}
   PlayerAnimation: 
   boolParameterName: IsScratching
+  onDrawer: 0
+  onShelf: 0
+  shelfClicked: 0
 --- !u!95 &1297811983
 Animator:
   serializedVersion: 5
@@ -1032,7 +1035,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 88992f79370b6814e9252fdb9152be31, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -1054,7 +1057,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isInteracting: 0
   canMove: 1
-  moveSpeed: 4
+  moveSpeed: 2
 --- !u!114 &1297811985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1068,7 +1071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boundaryMargin: 2
-  moveSpeed: 4
+  moveSpeed: 2
 --- !u!50 &1297811986
 Rigidbody2D:
   serializedVersion: 4
@@ -1218,6 +1221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1469848531}
   - component: {fileID: 1469848532}
+  - component: {fileID: 1469848533}
   m_Layer: 0
   m_Name: lantai_kamar2
   m_TagString: Untagged
@@ -1292,6 +1296,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1469848533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469848530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bc8188e8d492145bd9f98d62ee9696, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneBuildIndex: 0
 --- !u!1 &1528322466
 GameObject:
   m_ObjectHideFlags: 0

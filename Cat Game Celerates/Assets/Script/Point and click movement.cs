@@ -16,6 +16,7 @@ public class PointAndClickMovement : MonoBehaviour
     public float moveSpeed = 5f;
     private Vector3 clickedPosition;
     private bool isWithinBoundary = false;
+    public static bool PlayerWakeUp = false;
 
     public bool IsMoving
     {
@@ -26,6 +27,8 @@ public class PointAndClickMovement : MonoBehaviour
                 isMoving = value;
                 animator.SetBool("Is_walking", value);
             }
+            PlayerWakeUp = true;
+
         }
         get
         {
@@ -42,6 +45,11 @@ public class PointAndClickMovement : MonoBehaviour
         float halfPlayerWidth = spriteRenderer.bounds.extents.x;
         screenLeftBound = Camera.main.ScreenToWorldPoint(new Vector3(0, 0, Camera.main.transform.position.z)).x + halfPlayerWidth - boundaryMargin;
         screenRightBound = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, 0, Camera.main.transform.position.z)).x - halfPlayerWidth + boundaryMargin;
+        if(PlayerWakeUp == true)
+        {
+            animator.SetBool("Is_walking", true);
+        }
+        
     }
 
     void Update()
