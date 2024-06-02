@@ -7,6 +7,8 @@ TagManager:
   - Boundary
   - CatTower
   - Drawer
+  - BoundaryUp
+  - Shelf
   layers:
   - Default
   - TransparentFX
