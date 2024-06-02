@@ -9,7 +9,9 @@ public class InteractionAnimation : MonoBehaviour
     public string boolParameterName = "IsScratching";
     public bool onDrawer = false;
     public bool onShelf = false;
+    public bool onFloor = true;
     public bool shelfClicked = false;
+    public float resetDelay = 0.1f;
 
     private void Start()
     {
@@ -17,6 +19,42 @@ public class InteractionAnimation : MonoBehaviour
         {
             animator = GetComponent<Animator>();
         }
+    }
+
+    private void OnMouseDown()
+    {
+        if (gameObject.CompareTag("Shelf"))
+        {
+            OnObjectClicked();
+        }
+        if (gameObject.CompareTag("Drawer"))
+        {
+            OnObjectClickedDrawer();
+        }
+        if (gameObject.CompareTag("Floor"))
+        {
+            OnObjectClickedFloor();
+        }
+    }
+
+    public void OnObjectClickedDrawer()
+    {
+        animator.SetTrigger("JumpFromShelf");
+    }
+    public void OnObjectClickedFloor()
+    {
+        animator.SetTrigger("JumpFromDrawer");
+        StartCoroutine(ResetTrigger());
+    }
+    public void OnObjectClicked()
+    {
+        animator.SetTrigger("JumpShelf");
+    }
+
+    System.Collections.IEnumerator ResetTrigger()
+    {
+        yield return new WaitForSeconds(resetDelay);
+        animator.ResetTrigger("JumpFromDrawer");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -28,10 +66,12 @@ public class InteractionAnimation : MonoBehaviour
         if (collision.CompareTag("Drawer"))
         {
             onDrawer = true;
-            onShelf = false; 
+            onShelf = false;
+            onFloor = false;
             animator.SetTrigger("DrawerTrigger");
             animator.SetBool("onDrawer", true);
             animator.SetBool("onShelf", false);
+            animator.SetBool("onFloor", false);
         }
         if (collision.CompareTag("Shelf"))
         {
@@ -39,6 +79,16 @@ public class InteractionAnimation : MonoBehaviour
             onDrawer = false;
             animator.SetBool("onShelf", true);
             animator.SetBool("onDrawer", false);
+        }
+        if (collision.CompareTag("Floor"))
+        {
+            onShelf = false;
+            onDrawer = false;
+            onFloor= true;
+            animator.SetBool("onShelf", false);
+            animator.SetBool("onDrawer", false);
+            animator.SetTrigger("JumpFromDrawer");
+            animator.SetBool("onFloor", true);
         }
     }
     
@@ -55,20 +105,6 @@ public class InteractionAnimation : MonoBehaviour
             onDrawer = true;
             animator.SetBool("onShelf", false);
             animator.SetBool("onDrawer", true);
-        }
-    }
-
-    public void OnObjectClicked()
-    {
-        animator.SetTrigger("JumpShelf");
-    }
-
-    private void OnMouseDown()
-    {
-        if (gameObject.CompareTag("Shelf"))
-        {
-            OnObjectClicked();
-            Debug.Log("Shelf clicked but onDrawer is false, ShelfTrigger not triggered");
         }
     }
 }
