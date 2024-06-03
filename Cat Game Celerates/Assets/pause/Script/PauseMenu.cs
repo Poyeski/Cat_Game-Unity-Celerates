@@ -8,6 +8,7 @@ public class PauseGame : MonoBehaviour
     public void Pause()
     {
         Time.timeScale = 0f;
+        Debug.Log("test");
     }
 
     // Method to unpause the game
