@@ -10,6 +10,7 @@ TagManager:
   - BoundaryUp
   - Shelf
   - Floor
+  - Diary
   layers:
   - Default
   - TransparentFX

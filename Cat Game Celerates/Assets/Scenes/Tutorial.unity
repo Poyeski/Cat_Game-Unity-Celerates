@@ -6232,7 +6232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4c382f56f9827841af3d40821d44541, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueBox: {fileID: 1574010884}
+  dialogueCanvas: {fileID: 501524250}
   dialogueText: {fileID: 1981598367}
   overlayImage: {fileID: 482941203}
   playerController: {fileID: 576242198}
@@ -6787,7 +6787,7 @@ MonoBehaviour:
   onShelf: 0
   onFloor: 1
   shelfClicked: 0
-  resetDelay: 0.1
+  resetDelay: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -40,6 +40,7 @@ public class InteractionAnimation : MonoBehaviour
     public void OnObjectClickedDrawer()
     {
         animator.SetTrigger("JumpFromShelf");
+        StartCoroutine(ResetTriggerDrawer());
     }
     public void OnObjectClickedFloor()
     {
@@ -55,6 +56,12 @@ public class InteractionAnimation : MonoBehaviour
     {
         yield return new WaitForSeconds(resetDelay);
         animator.ResetTrigger("JumpFromDrawer");
+    }
+
+    System.Collections.IEnumerator ResetTriggerDrawer()
+    {
+        yield return new WaitForSeconds(resetDelay);
+        animator.ResetTrigger("JumpFromShelf");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
