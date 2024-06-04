@@ -9,6 +9,7 @@ TagManager:
   - Drawer
   - BoundaryUp
   - Shelf
+  - Floor
   layers:
   - Default
   - TransparentFX
