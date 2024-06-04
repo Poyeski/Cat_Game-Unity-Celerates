@@ -11,10 +11,10 @@ public class Interactable : MonoBehaviour
     public int showImageAtIndex = -1;
     //public bool isDialogue = false;
     //public DialogueText scriptDialogueText;
-    
+
     //void Start()
     // {
-        // scriptDialogueText = FindObjectOfType(DialogueText);
+    // scriptDialogueText = FindObjectOfType(DialogueText);
 
     // }
 
@@ -32,6 +32,4 @@ public class Interactable : MonoBehaviour
             player.InteractWithObject(interactionPosition, interactionAnimation);
         }
     }
-
-
 }

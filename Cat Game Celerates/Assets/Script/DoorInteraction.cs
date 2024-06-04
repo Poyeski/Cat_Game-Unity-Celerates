@@ -1,18 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DoorInteraction : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public InteractionAnimation interactionAnimation; 
+    public string nextSceneName;
+
+    private void OnMouseDown()
     {
-        
+        if (interactionAnimation != null && interactionAnimation.onDrawer)
+        {
+            StartCoroutine(LoadNextSceneAfterDelay());
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator LoadNextSceneAfterDelay()
     {
-        
+        // Adjust this delay if needed
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(nextSceneName);
     }
 }
