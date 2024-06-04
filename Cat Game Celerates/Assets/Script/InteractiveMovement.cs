@@ -61,7 +61,6 @@ public class InteractiveMovement : MonoBehaviour
         }
         if (isWithinBoundary)
         {
-            Debug.Log("Player is within the boundary");
             IsMoving = false;
             Vector3 currentPosition = transform.position;
             Vector3 AfterHit = new Vector3((float)((float)currentPosition.x - 0.001), (float)((float)currentPosition.y - 0.001), currentPosition.z);
@@ -69,7 +68,6 @@ public class InteractiveMovement : MonoBehaviour
         }
         if (isWithinBoundaryUp)
         {
-            Debug.Log("Player is within the  Up boundary");
             IsMoving = false;
             Vector3 currentPosition = transform.position;
             Vector3 AfterHitUp = new Vector3((float)((float)currentPosition.x + 0.001), (float)((float)currentPosition.y + 0.001), currentPosition.z);
@@ -77,8 +75,6 @@ public class InteractiveMovement : MonoBehaviour
         }
         else
         {
-            Debug.Log("Player is outside the boundary");
-
         }
         // if (IsMoving)
         // {
