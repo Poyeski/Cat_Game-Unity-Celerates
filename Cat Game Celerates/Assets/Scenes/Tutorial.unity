@@ -1303,7 +1303,7 @@ Transform:
   m_GameObject: {fileID: 245159392}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 59.1, y: -51.5, z: 1}
+  m_LocalPosition: {x: 73.7, y: -51.5, z: 2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1376,7 +1376,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -3654,7 +3654,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -4420,7 +4420,7 @@ MonoBehaviour:
   onShelf: 0
   onFloor: 1
   shelfClicked: 0
-  resetDelay: 1
+  resetDelay: 0.8
 --- !u!1 &1217110065
 GameObject:
   m_ObjectHideFlags: 0
@@ -4632,6 +4632,7 @@ Transform:
   m_Children:
   - {fileID: 834150299}
   - {fileID: 1710079961}
+  - {fileID: 1213343182}
   - {fileID: 245159393}
   - {fileID: 444712463}
   - {fileID: 695188947}
@@ -4643,7 +4644,6 @@ Transform:
   - {fileID: 210140995}
   - {fileID: 184377275}
   - {fileID: 115850015}
-  - {fileID: 1213343182}
   - {fileID: 1391063224}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6613,7 +6613,7 @@ MonoBehaviour:
   dialogueLines:
   - 
   - you see a photo frame on top of the drawer
-  - youtake a closer look
+  - you take a closer look
   - it look's like an image of master's graduation
   interactionPosition: {x: 44, y: -20, z: 0}
   interactionAnimation: 

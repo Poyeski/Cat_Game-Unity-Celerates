@@ -94,7 +94,6 @@ public class InteractionAnimation : MonoBehaviour
             onFloor= true;
             animator.SetBool("onShelf", false);
             animator.SetBool("onDrawer", false);
-            animator.SetTrigger("JumpFromDrawer");
             animator.SetBool("onFloor", true);
         }
     }
