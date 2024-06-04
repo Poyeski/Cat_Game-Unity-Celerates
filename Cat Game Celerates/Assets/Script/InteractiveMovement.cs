@@ -53,6 +53,7 @@ public class InteractiveMovement : MonoBehaviour
             animator.SetBool("Is_walking", false);
         }
     }
+    
     void Update()
     {
         if (canMove && !isInteracting && Input.GetMouseButtonDown(0))
