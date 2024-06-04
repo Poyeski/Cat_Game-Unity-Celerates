@@ -1361,7 +1361,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_TargetDisplay: 0
 --- !u!224 &618755316
 RectTransform:
@@ -2001,8 +2001,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 382, y: 206}
-  m_SizeDelta: {x: 1920, y: 1052.7072}
+  m_AnchoredPosition: {x: 298.28302, y: 216.38194}
+  m_SizeDelta: {x: 1495.8931, y: 1105.3018}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &777786545
 GameObject:
@@ -3887,7 +3887,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.10127783, y: -0.13097358}
+  m_Offset: {x: -0.12235141, y: -0.21526837}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3898,7 +3898,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.7851305, y: 1.2619472}
+  m_Size: {x: 2.9843297, y: 1.4305367}
   m_EdgeRadius: 0
 --- !u!4 &1462236967
 Transform:
@@ -4969,7 +4969,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.10127783, y: -0.11642122}
+  m_Offset: {x: -0.06966734, y: -0.2534002}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4980,7 +4980,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.7851305, y: 1.2328424}
+  m_Size: {x: 2.963256, y: 1.5068004}
   m_EdgeRadius: 0
 --- !u!4 &2022160003
 Transform:
