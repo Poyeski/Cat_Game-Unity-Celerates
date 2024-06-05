@@ -12,6 +12,7 @@ TagManager:
   - Floor
   - Diary
   - Door
+  - Chair
   layers:
   - Default
   - TransparentFX

@@ -96,6 +96,10 @@ public class InteractionAnimation : MonoBehaviour
             animator.SetBool("onDrawer", false);
             animator.SetBool("onFloor", true);
         }
+        if (collision.CompareTag("Chair"))
+        {
+            animator.SetTrigger("End");
+        }
     }
     
 
