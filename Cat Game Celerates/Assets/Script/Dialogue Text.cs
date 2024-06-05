@@ -18,7 +18,7 @@ public class DialogueText : MonoBehaviour
     private int imageShowIndex;
     private int currentSentenceIndex;
     public InteractiveMovement scriptInteractiveMovement;
-    
+
 
     void Awake()
     {
@@ -46,20 +46,19 @@ public class DialogueText : MonoBehaviour
     {
         overlayImage.gameObject.SetActive(false);
         Debug.Log("Overlay image set to inactive in Start.");
-        SceneManager.sceneLoaded += GetDailogueBox; //setiap kali event sceneLoaded dijalankan, akan menjalankan getdialoguebox
+        SceneManager.sceneLoaded += SetUpAfterLoad; //setiap kali event sceneLoaded dijalankan, akan menjalankan getdialoguebox
     }
 
-    private void GetDailogueBox(Scene var,LoadSceneMode load)
+    private void SetUpAfterLoad(Scene var,LoadSceneMode load)
     {
-        if (dialogueCanvas==null)
-        {
-           GameObject.Find("DialogueBox");
-        }
-
-         if (dialogueCanvas!=null)
-        {
-            dialogueCanvas.gameObject.SetActive(false);
-        }
+       if(playerController==null)
+       {
+        playerController=Object.FindAnyObjectByType<PointAndClickMovement>();
+       }
+       if(scriptInteractiveMovement==null)
+       {
+         scriptInteractiveMovement=Object.FindAnyObjectByType<InteractiveMovement>();
+       }
     }
 
     public void StartDialogue(string[] lines, Sprite image = null, int showImageAtIndex = -1)
@@ -69,6 +68,7 @@ public class DialogueText : MonoBehaviour
         playerController.EnableMovement(false);
         Debug.Log("Starting dialogue with " + lines.Length + " lines.");
         sentences.Clear();
+        
 
         foreach (string line in lines)
         {
