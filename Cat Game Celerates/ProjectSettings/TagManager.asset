@@ -12,8 +12,6 @@ TagManager:
   - Floor
   - Diary
   - Door
-  - DialogueCanvas
-  - DialogueBox
   layers:
   - Default
   - TransparentFX
