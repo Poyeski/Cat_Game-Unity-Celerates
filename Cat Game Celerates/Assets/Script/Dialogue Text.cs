@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class DialogueText : MonoBehaviour
@@ -17,6 +18,7 @@ public class DialogueText : MonoBehaviour
     private int imageShowIndex;
     private int currentSentenceIndex;
     public InteractiveMovement scriptInteractiveMovement;
+    
 
     void Awake()
     {
@@ -31,7 +33,12 @@ public class DialogueText : MonoBehaviour
         }
 
         sentences = new Queue<string>();
-        dialogueCanvas.gameObject.SetActive(false);
+        if (dialogueCanvas!=null)
+        {
+            dialogueCanvas.gameObject.SetActive(false);
+        }
+        
+
         Debug.Log("Dialogue canvas set to inactive in Awake.");
     }
 
@@ -39,6 +46,20 @@ public class DialogueText : MonoBehaviour
     {
         overlayImage.gameObject.SetActive(false);
         Debug.Log("Overlay image set to inactive in Start.");
+        SceneManager.sceneLoaded += GetDailogueBox; //setiap kali event sceneLoaded dijalankan, akan menjalankan getdialoguebox
+    }
+
+    private void GetDailogueBox(Scene var,LoadSceneMode load)
+    {
+        if (dialogueCanvas==null)
+        {
+           GameObject.Find("DialogueBox");
+        }
+
+         if (dialogueCanvas!=null)
+        {
+            dialogueCanvas.gameObject.SetActive(false);
+        }
     }
 
     public void StartDialogue(string[] lines, Sprite image = null, int showImageAtIndex = -1)
@@ -111,4 +132,7 @@ public class DialogueText : MonoBehaviour
             Debug.Log("Mouse click or space pressed. Displaying next sentence.");
         }
     }
+
+
+
 }

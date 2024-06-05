@@ -20,10 +20,11 @@ public class Interactable : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("Object clicked: " + gameObject.name);
+       
         if (DialogueText.Instance != null && !DialogueText.Instance.isDialogueActive && dialogueLines.Length > 0)
         {
             //isDialogue = true;
+             Debug.Log("Object clicked: " + gameObject.name);
             DialogueText.Instance.StartDialogue(dialogueLines, dialogueImage, showImageAtIndex);
         }
         InteractiveMovement player = FindObjectOfType<InteractiveMovement>();
