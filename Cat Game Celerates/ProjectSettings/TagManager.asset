@@ -11,7 +11,6 @@ TagManager:
   - Shelf
   - Floor
   - Diary
-  - Door
   layers:
   - Default
   - TransparentFX

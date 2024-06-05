@@ -10,7 +10,6 @@ public class InteractionAnimation : MonoBehaviour
     public bool onDrawer = false;
     public bool onShelf = false;
     public bool onFloor = true;
-    public bool onDoor = false;
     public bool shelfClicked = false;
     public float resetDelay = 0.1f;
 
@@ -71,10 +70,6 @@ public class InteractionAnimation : MonoBehaviour
         {
             animator.SetBool(boolParameterName, true);
         }
-        if (collision.CompareTag("Door"))
-        {
-            animator.SetBool("onDoor", true);
-        }
         if (collision.CompareTag("Drawer"))
         {
             onDrawer = true;
@@ -110,10 +105,6 @@ public class InteractionAnimation : MonoBehaviour
         if (collision.CompareTag("CatTower"))
         {
             animator.SetBool(boolParameterName, false);
-        }
-        if (collision.CompareTag("Door"))
-        {
-            animator.SetBool("onDoor", false);
         }
         if (collision.CompareTag("Shelf"))
         {
