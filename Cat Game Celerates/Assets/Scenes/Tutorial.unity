@@ -978,7 +978,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueLines:
   - 
-  - the door handle seem toohigh for you.
+  - the door handle seems too high for you to reach.
   interactionPosition: {x: 85, y: -25, z: 0}
   interactionAnimation: 
   dialogueImage: {fileID: 0}
