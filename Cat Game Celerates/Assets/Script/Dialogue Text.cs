@@ -39,6 +39,24 @@ public class DialogueText : MonoBehaviour
     {
         overlayImage.gameObject.SetActive(false);
         Debug.Log("Overlay image set to inactive in Start.");
+        ReassignDialogueCanvas();
+    }
+
+    void ReassignDialogueCanvas()
+    {
+        GameObject canvasObject = GameObject.Find("DialogueBox"); // Replace "DialogueCanvas" with the name or tag of your dialogue canvas
+        if (canvasObject != null)
+        {
+            dialogueCanvas = canvasObject.GetComponent<Canvas>();
+            dialogueText = canvasObject.GetComponentInChildren<TextMeshProUGUI>();
+            overlayImage = canvasObject.GetComponentInChildren<Image>();
+            dialogueCanvas.gameObject.SetActive(false);
+            Debug.Log("Dialogue canvas reassigned in ReassignDialogueCanvas.");
+        }
+        else
+        {
+            Debug.LogError("No Canvas found with the specified name. Make sure a Canvas is present and named correctly.");
+        }
     }
 
     public void StartDialogue(string[] lines, Sprite image = null, int showImageAtIndex = -1)
