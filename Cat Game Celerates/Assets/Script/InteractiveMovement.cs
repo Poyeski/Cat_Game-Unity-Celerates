@@ -188,4 +188,9 @@ public class InteractiveMovement : MonoBehaviour
             targetPosition = transform.position;
         }
     }
+    public void DisableMovement()
+    {
+        canMove = false;
+    }
+
 }
