@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72ea0d937b1b652479f9ea8dbd579892, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainMenuMusic: {fileID: 41579369}
+  BGM: {fileID: 41579369}
 --- !u!82 &41579369
 AudioSource:
   m_ObjectHideFlags: 0
