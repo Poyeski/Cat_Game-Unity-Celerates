@@ -6102,7 +6102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueLines:
   - 
-  - test
+  - Just a normal wooden chair
   interactionPosition: {x: -30, y: -7, z: 0}
   interactionAnimation: 
   dialogueImage: {fileID: 0}
