@@ -841,8 +841,8 @@ GameObject:
   - component: {fileID: 184377275}
   - component: {fileID: 184377276}
   - component: {fileID: 184377279}
-  - component: {fileID: 184377278}
   - component: {fileID: 184377277}
+  - component: {fileID: 184377280}
   m_Layer: 6
   m_Name: Door_Tutorial
   m_TagString: Untagged
@@ -962,25 +962,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 22.116148, y: 89.29921}
   m_EdgeRadius: 0
---- !u!114 &184377278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 184377274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9a5799c759b7a24a8583acf464d6bbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogueLines:
-  - 
-  - the door handle seems too high for you to reach.
-  interactionPosition: {x: 85, y: -25, z: 0}
-  interactionAnimation: 
-  dialogueImage: {fileID: 0}
-  showImageAtIndex: -1
 --- !u!114 &184377279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -995,6 +976,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionAnimation: {fileID: 576242205}
   nextSceneName: Lorong
+--- !u!114 &184377280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184377274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f5f909c4979c7745902a221781c9b58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueLines:
+  - 
+  - the door handle seems too high for you to reach.
+  interactionPosition: {x: 85, y: -25, z: 0}
+  interactionAnimation: 
+  dialogueImage: {fileID: 0}
+  showImageAtIndex: -1
+  interactionAnimationScript: {fileID: 576242205}
 --- !u!1 &191439573
 GameObject:
   m_ObjectHideFlags: 0

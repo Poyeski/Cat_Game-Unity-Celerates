@@ -13,6 +13,7 @@ TagManager:
   - Diary
   - Door
   - Chair
+  - Bowl
   layers:
   - Default
   - TransparentFX

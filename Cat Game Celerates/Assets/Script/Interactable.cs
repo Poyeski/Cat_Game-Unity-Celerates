@@ -20,7 +20,6 @@ public class Interactable : MonoBehaviour
 
     private void OnMouseDown()
     {
-       
         if (DialogueText.Instance != null && !DialogueText.Instance.isDialogueActive && dialogueLines.Length > 0)
         {
             //isDialogue = true;
