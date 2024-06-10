@@ -11,10 +11,12 @@ public class GameManager : MonoBehaviour
     public int targetScore = 100;
     public float timeLimit = 60f;
     public int penaltyPoints = 5;
-    public string returnSceneName; 
+    public string NextSceneName;
+    public string ReturnSceneName;
 
     private int currentScore;
     private float timeLeft;
+    private bool gameEnded;
 
     void Awake()
     {
@@ -25,12 +27,15 @@ public class GameManager : MonoBehaviour
     {
         currentScore = 0;
         timeLeft = timeLimit;
+        gameEnded = false;
         UpdateScoreText();
         UpdateTimerText();
     }
 
     void Update()
     {
+        if (gameEnded) return;
+
         timeLeft -= Time.deltaTime;
         UpdateTimerText();
         if (timeLeft <= 0)
@@ -41,16 +46,16 @@ public class GameManager : MonoBehaviour
 
     public void AddScore(int points)
     {
+        if (gameEnded) return;
+
         currentScore += points;
         UpdateScoreText();
-        if (currentScore >= targetScore)
-        {
-            EndGame();
-        }
     }
 
     public void MissFood()
     {
+        if (gameEnded) return;
+
         currentScore -= penaltyPoints;
         if (currentScore < 0)
         {
@@ -71,11 +76,12 @@ public class GameManager : MonoBehaviour
 
     void EndGame()
     {
-        if (currentScore >= targetScore && timeLeft <= 0)
+        gameEnded = true;
+        if (currentScore >= targetScore)
         {
-            if (!string.IsNullOrEmpty(returnSceneName))
+            if (!string.IsNullOrEmpty(NextSceneName))
             {
-                SceneManager.LoadScene(returnSceneName);
+                SceneManager.LoadScene(NextSceneName);
             }
             else
             {
@@ -84,13 +90,9 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            if (!string.IsNullOrEmpty(returnSceneName))
+            if (!string.IsNullOrEmpty(ReturnSceneName))
             {
-                SceneManager.LoadScene(returnSceneName);
-            }
-            else
-            {
-                Debug.LogError("Return scene name is not specified.");
+                SceneManager.LoadScene(ReturnSceneName);
             }
         }
     }

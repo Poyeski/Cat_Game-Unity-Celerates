@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class StartMinigame : MonoBehaviour
 {
     public string minigameOverlaySceneName = "MinigameOverlay"; 
-    public string returnSceneName; 
+    public string ReturnSceneName; 
     public int mouseButtonIndex = 0; 
 
     void OnMouseDown()
@@ -21,7 +21,7 @@ public class StartMinigame : MonoBehaviour
         GameManager gameManager = FindObjectOfType<GameManager>();
         if (gameManager != null)
         {
-            gameManager.returnSceneName = returnSceneName;
+            gameManager.ReturnSceneName = ReturnSceneName;
         }
         else
         {
