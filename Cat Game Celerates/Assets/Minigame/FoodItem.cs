@@ -11,11 +11,13 @@ public class FoodItem : MonoBehaviour
         if (collision.gameObject.CompareTag("Bowl"))
         {
             GameManager.instance.AddScore(points);
+            AudioManager.instance.PlayCollectSound();
             Destroy(gameObject);
         }
-        else if (collision.gameObject.CompareTag("Floor"))
+        else if (collision.gameObject.CompareTag("Ground"))
         {
             GameManager.instance.MissFood();
+            AudioManager.instance.PlayMissSound();
             Destroy(gameObject);
         }
     }

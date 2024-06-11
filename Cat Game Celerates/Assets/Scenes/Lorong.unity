@@ -2463,7 +2463,7 @@ MonoBehaviour:
   - 
   - there's an altar with an elderly figure picture
   - There's nothing to eat here
-  interactionPosition: {x: 0, y: -0.75, z: 0}
+  interactionPosition: {x: 0, y: -2, z: 0}
   interactionAnimation: 
   dialogueImage: {fileID: 0}
   showImageAtIndex: -1
@@ -5718,7 +5718,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minigameOverlaySceneName: MinigameOverlay
-  returnSceneName: 
+  ReturnSceneName: 
   mouseButtonIndex: 0
 --- !u!61 &1817715101
 BoxCollider2D:
@@ -5982,7 +5982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minigameOverlaySceneName: MinigameOverlay
-  returnSceneName: 
+  ReturnSceneName: 
   mouseButtonIndex: 0
 --- !u!1 &1948443185
 GameObject:

@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Lorong.unity
     guid: 48ee8e95e58ff4f479124bf350f5e793
   - enabled: 1
+    path: Assets/lorong V2.unity
+    guid: c3946daa55fd1924fac41b972568e336
+  - enabled: 1
     path: Assets/Scenes/Kamar2.unity
     guid: cdf04187c94873342bcbecc6771e461a
   - enabled: 1
@@ -26,4 +29,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MinigameOverlay.unity
     guid: 07005442d657edd4cab84b52c17005ca
+  - enabled: 1
+    path: Assets/MinigameOverlayCm.unity
+    guid: 7b49447c666246d4bbc632e4c4977a49
+  - enabled: 1
+    path: Assets/Lorong Secret.unity
+    guid: 7aed1a637fe12f940866d8b679b52de1
+  - enabled: 1
+    path: Assets/Kamar Secret.unity
+    guid: 9334d0483707cd04a9974e9b5cf70dba
+  - enabled: 1
+    path: Assets/UnderCat.unity
+    guid: 25a4c9e88d193ec46b65c899db02ce15
   m_configObjects: {}

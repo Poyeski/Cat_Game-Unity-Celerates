@@ -14,6 +14,7 @@ TagManager:
   - Door
   - Chair
   - Bowl
+  - BoundaryMini
   layers:
   - Default
   - TransparentFX
